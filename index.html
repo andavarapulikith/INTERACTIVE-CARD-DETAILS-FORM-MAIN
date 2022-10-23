@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first">
+    <div class="frontimg">
+      <img class="logo" src="images/card-logo.svg" alt="">
+      <p class="number">0000 0000 0000</p>
+      <div class="namedate">
+        <p class="name">----</p>
+
+        <p class="date">00/00</p>
+      </div>
+    </div>
+    <div class="secondimg">
+      <p class="num">000</p>
+
+    </div>
+  </div>
+  <div class="anyone">
+  <div class="second">
+    <label for="cardholder">CARDHOLDER NAME</label>
+    <br>
+    <input id="cardholder" class="inp" type="text" placeholder="e.g. Jane Applesind">
+    <br>
+    <label for="cardnumber">CARD NUMBER</label>
+    <br>
+    <input id="cardnumber" class="inp" type="text" placeholder="e.g. 1234 5678 9013">
+    <p class="cant"></p>
+    <br>
+    <label for="expdate">EXP.DATE(MM/YY) </label>
+    <label for="cvc" id="gap">CVC</label>
+   
+
+    <br>
+    <div class="expcvc">
+      <div class="expiry">
+        <input type="text" id="expdatemm" placeholder="MM">
+        <input type="text" id="expdateyy" placeholder="YY">
+        <p class="expiryblank"></p>
+      </div>
+      <div class="cvca">
+        
+        
+        <input id="cvc" type="text" placeholder="e.g. 123">
+        <p class="cvcblank"></p>
+        <br>
+        <br>
+        
+      </div>
+    </div>
+    <button class="confirm">CONFIRM</button>
+  </div>
+  <div class="third">
+    <img src="images/icon-complete.svg" alt="">
+    <p>THANK YOU !</p>
+    <p class="added">We've added your card details</p>
+    <button class="continue">CONTINUE</button>
+  </div>
+</div>
+
+
+  
+</body>
+<script src="design/javascript.js"></script>
+
+</html>
